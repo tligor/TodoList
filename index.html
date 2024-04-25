@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Lista de tarefas</title>
+</head>
+<body>
+    <header>
+        <h1>LI to Rundo</h1>
+        <button type="submit">Adicionar Tarefa</button>
+    </header>
+    <form>
+        
+        <h2>Tarefa</h2>
+        <div class="container-task">
+        <label for="h2">Nome da tarefa</label>
+        <input type="text" placeholder="Nova tarefa" required id="task-desc">
+        <label for="task-status">Status da Tarefa</label>
+        <select name="stats" id="task-status">
+            <option value="Não iniciado">Não iniciado</option>
+            <option value="Iniciado">Iniciado</option>
+            <option value="Em andamento">Em andamento</option>
+        </select>
+        <label for="date">Quando?</label>
+        <input type="date" id="when" required>
+        <input type="submit" id="add-task" value="Adicionar">
+        </div>
+    </form>
+    <div class="tabela">
+        <table cellspacing="0">
+            <thead>
+            <tr>
+                <th>Tarefa</th>
+                <th>Status da Tarefa</th>
+                <th>Data</th>
+                <th>Finalizada?</th>
+            </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>---</th>
+                    <th>---</th>
+                    <th>---</th>
+                    <th><input type="checkbox" id="finished" checked disabled></th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src='./script.js'></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+
+header, ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: rgba(0, 0, 50, 0.3);
+    color: white;
+    font-size: 20px;
+}
+
+header button{
+    width: 200px;
+    background-color: green;
+    color: white;
+    border: none;
+}
+
+ul ,a{
+    display: flex;
+    text-transform: uppercase;
+    gap: 10px;
+    list-style-type: none;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#ready{
+    color:green;
+}
+
+#unready{
+    color: red;
+}
+
+table{
+    width: 600px;
+    padding: 10px;
+    
+}
+table thead{
+    background-color: #333;
+    color:white;
+}
+table th{
+    border: 1px solid black;
+}
+
+form{
+    display:flex;
+    padding: 8px;
+    background-color: silver;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+
+}
+input text{
+    height: 20px;
+    width: 90px;
+}
+
+.tabela{
+    display: flex;
+    justify-content: center;
+}
+
+.container-task{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    justify-content: center;
+}
+
+td{
+    border: 1px solid black;
+    text-align: center;
+}
+
+.nao-iniciado {
+    background-color: silver;
+}
+
+.iniciado {
+    background-color: lightgreen;
+}
+
+.em-andamento {
+    background-color: yellow;
+}
+
+.finished{
+    text-decoration: line-through;
+}
