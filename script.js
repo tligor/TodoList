@@ -77,4 +77,12 @@ $(document).ready(function() {
             tbody.append(linha);
         })
     }
+    const entradaData = document.getElementById('when');
+    const maxCaract = 10;
+
+    entradaData.addEventListener('input', function(){
+        if(this.value.length > maxCaract){
+            this.value = this.value.slice(0, maxCaract)
+        }
+    });
 });
